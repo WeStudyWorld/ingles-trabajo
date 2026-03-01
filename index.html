@@ -551,7 +551,7 @@ section { position: relative; z-index: 1; }
 .dest-card.malta:hover     { border-color: rgba(244,114,182,0.5); box-shadow: inset 0 1px 0 rgba(244,114,182,0.18), 0 16px 48px rgba(244,114,182,0.16); }
 
 .dest-image {
-  height: 200px;
+  height: 280px; /* <- Aumentamos la altura de 200px a 280px */
   overflow: hidden;
   position: relative;
 }
@@ -1491,9 +1491,10 @@ section { position: relative; z-index: 1; }
   overflow: hidden;
 }
 .dest-carousel .carousel-slide img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  object-position: center;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; /* Mantiene la proporción llenando el espacio */
+  object-position: center center; /* Centra la imagen vertical y horizontalmente */
   filter: brightness(0.6) saturate(0.8);
   transition: filter 0.5s ease;
   display: block;
